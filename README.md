@@ -1,2 +1,131 @@
-# Smart-Cradle-System-for-Infant-Health-Monitoring-with-Sleep-Pattern-Analysis
-Python-based Smart Cradle System that detects infant motion, analyzes sleep patterns, generates reports, and provides real-time monitoring via GUI.
+🌙 Smart Cradle System for Infant Health Monitoring with Sleep Pattern Analysis
+
+A fully software-based intelligent cradle monitoring system that uses computer vision, data analytics, and a GUI-driven workflow to monitor infant motion, analyze sleep activity, generate reports, visualize patterns, and simulate cradle automation — all without hardware.
+
+This project is designed for parents, hospitals, and neonatal units seeking low-cost, non-intrusive, and stress-free infant monitoring.
+
+🚀 Key Features
+🔹 1. Real-Time Motion Detection (OpenCV)
+• Detects infant movement using background subtraction.
+• Highlights motion areas with bounding boxes.
+• Logs every motion start and end time.
+
+🔹 2. GUI Application (Tkinter)
+• Beautiful, user-friendly interface allowing:
+• Live monitoring
+• Video file analysis
+• One-click reports
+• Alerts & rocking simulation
+• Sleep pattern graphs
+• SQLite database viewing
+
+🔹 3. Sleep Pattern & Timeline Analysis
+• Generates a timeline graph of motion episodes.
+• Shows sleep disruption patterns.
+• Helps identify deep sleep vs active sleep.
+
+🔹 4. Automated Reports
+• Daily sleep reports (total motion, average duration).
+• Exportable summaries for doctors/parents.
+
+🔹 5. Alert Simulation
+• Distress alerts (frequent movement)
+• Inactivity alerts (no movement for long period)
+
+🔹 6. Cradle Rocking Simulation with Audio
+• Plays gentle rocking sound for 5 seconds per event.
+• Demonstrates automation behavior.
+
+🔹 7. SQLite Data Logging
+• Saves all motion timestamps to a local database.
+• Allows retrieving historical data.
+
+🧩 Tech Stack
+
+| Component                | Technology     |
+| ------------------------ | -------------- |
+| Programming Language     | Python 3.x     |
+| Video Processing         | OpenCV         |
+| GUI Framework            | Tkinter        |
+| Data Handling            | Pandas, SQLite |
+| Plotting & Visualization | Matplotlib     |
+| Audio Playback           | pygame         |
+| Image Handling           | Pillow         |
+
+📂 Folder Structure
+
+Smart-Cradle-System/
+│
+├── smart_cradle_gui.py              # Main GUI application (integrated)
+├── smart_cradle_monitor.py          # Motion detection logic (old module)
+├── alert_system.py                  # Distress & inactivity alerts
+├── cradle_rocker.py                 # Rocking simulation with audio
+├── daily_sleep_report.py            # Sleep report generator
+├── sleep_pattern_analysis.py        # Graph-based sleep analysis
+├── sleep_graph.py                   # Motion timeline visualizer
+│
+├── sleep_log.csv                    # Sample motion log
+├── smart_cradle.db                  # SQLite database
+├── gentle-lullaby.wav               # Rocking audio
+│
+├── requirements.txt                 # Python dependencies
+└── README.md                        # Project documentation
+
+🖥️ How to Run the Project
+
+1. Clone the Repository
+     git clone https://github.com/harkaran911/Smart-Cradle-System-for-Infant-Health-Monitoring-with-Sleep-Pattern-Analysis.git
+     cd Smart-Cradle-System
+
+2. Install Dependencies
+     pip install -r requirements.txt
+
+3. Run the GUI
+     python smart_cradle_gui.py
+
+🧪 How the System Works
+
+Step 1 — Input Selection
+User chooses Live Webcam Feed or Video File Input
+The system begins real-time or offline analysis
+
+Step 2 — Motion Detection
+Converts frames to grayscale
+Applies Gaussian blur
+Detects difference between background and current frame
+Identifies motion with contours
+Logs timestamps
+
+Step 3 — Data Storage
+Every motion event is saved in:
+sleep_log.csv
+smart_cradle.db (SQLite table)
+
+Step 4 — Analysis Tools
+Graphs
+Sleep pattern timeline
+Stage estimation
+Alerts
+Reports
+
+Step 5 — Rocking Simulation
+Plays gentle rocking sound for 5 seconds.
+
+🏥 Use Cases
+
+🍼 Parents at Home
+1. Low-cost infant sleep tracking
+2. Lightweight laptop/mobile monitoring
+
+🏥 Hospitals & NICUs
+1. Non-contact monitoring reduces stress
+2. Useful when sensors are not advisable
+3. Software can integrate with CCTV feeds
+
+🎓 Academic & Research
+1. Perfect for infant behavior studies
+2. Excellent for machine learning datasets
+
+📜 License
+
+MIT License © 2025 Smart Cradle Development Team
