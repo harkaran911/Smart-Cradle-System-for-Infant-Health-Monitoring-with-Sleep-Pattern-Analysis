@@ -1,8 +1,9 @@
-🌙 Smart Cradle System for Infant Health Monitoring with Sleep Pattern Analysis
+🌙 Smart Cradle System for Infant Health Monitoring
+with Sleep Pattern Analysis (Software-Based Computer Vision System)
 
-A fully software-based intelligent cradle monitoring system that uses computer vision, data analytics, and a GUI-driven workflow to monitor infant motion, analyze sleep activity, generate reports, visualize patterns, and simulate cradle automation — all without hardware.
+A fully software-based intelligent infant monitoring solution that uses computer vision, data analytics, and a Tkinter GUI to monitor infant movement, analyze sleep quality, generate reports, visualize patterns, and simulate cradle automation — no hardware required.
 
-This project is designed for parents, hospitals, and neonatal units seeking low-cost, non-intrusive, and stress-free infant monitoring.
+Designed for parents, hospitals, neonatal units (NICU), and researchers seeking a low-cost, non-intrusive, and stress-free monitoring system.
 
 🚀 Key Features
 🔹 1. Real-Time Motion Detection (OpenCV)
@@ -51,25 +52,6 @@ This project is designed for parents, hospitals, and neonatal units seeking low-
 | Plotting & Visualization | Matplotlib     |
 | Audio Playback           | pygame         |
 | Image Handling           | Pillow         |
-
-📂 Folder Structure
-
-Smart-Cradle-System/
-│
-├── smart_cradle_gui.py              # Main GUI application (integrated)
-├── smart_cradle_monitor.py          # Motion detection logic (old module)
-├── alert_system.py                  # Distress & inactivity alerts
-├── cradle_rocker.py                 # Rocking simulation with audio
-├── daily_sleep_report.py            # Sleep report generator
-├── sleep_pattern_analysis.py        # Graph-based sleep analysis
-├── sleep_graph.py                   # Motion timeline visualizer
-│
-├── sleep_log.csv                    # Sample motion log
-├── smart_cradle.db                  # SQLite database
-├── gentle-lullaby.wav               # Rocking audio
-│
-├── requirements.txt                 # Python dependencies
-└── README.md                        # Project documentation
 
 🖥️ How to Run the Project
 
